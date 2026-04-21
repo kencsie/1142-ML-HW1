@@ -156,7 +156,7 @@ jobs:
 
       - name: Run Gemini AI Review
         env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEYS }}
         run: |
           python3 - <<EOF
           import os
