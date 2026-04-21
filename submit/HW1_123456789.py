@@ -80,7 +80,7 @@ def save_results(df, output_file_path):
 
     # TODO 6.1: 儲存 CSV，避免中文亂碼
     # Hint: df.to_csv(...)
-
+    df.to_csv(output_file_path, index=False, encoding='utf-8-sig')
 
 
 if __name__ == "__main__":
